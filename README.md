@@ -11,6 +11,11 @@ Task: Classification
 
 Data Type: Multivariate and Categorical (natural language)
 
+More info: 
+* Age
+* Gender
+* 14 symptoms
+
 ## 💡 Motivation and Context
 It's fascinating to easily predict health diseases using currated data. This repo contains basic implemetation of concepts like using data science libraries (numpy, pandas, etc.), data preprocessing and use of machine learning algorithms.
  
