@@ -56,11 +56,27 @@ def main():
     """ this function defines the webpage """
 
     # side-bar
-    st.sidebar.markdown('**Diabetes** is a disease that occurs when your blood glucose, '
+    st.sidebar.markdown(' # What is Diabetes? \n **Diabetes** is a disease that occurs when your blood glucose, '
                         'also called blood sugar, is **_too high._**')
-    st.sidebar.write('Did you know?')
+    with st.sidebar.expander('Did you know?', expanded=False):
+        st.markdown('* Diabetes is the number 7 cause of death in the United States, '
+                    'with a much higher mortality rate in the rest of the world. ')
+        st.markdown('* There are three types of diabetes: \n >> 1. Type 1 \n '
+                    '>> 2. Type 2 \n >> 3. Gestational')
+        st.markdown('* About 90-95 percent of people with diabetes have Type 2, while about '
+                    '5 percent have Type 1, and the remainder have gestational diabetes.')
+        st.markdown('* Staying healthy through proper diet and about 30 minutes of exercise every '
+                    'day or on most days can drastically decrease your chance of getting Type 2 diabetes.')
+        st.markdown('* A person with diabetes should avoid eating excess sugar, unhealthy fats, sodium and '
+                    'cholesterol. Instead, eat fiber-rich foods like green vegetables and fresh fruits')
+        st.markdown('* If diabetes is not managed well, it can lead to amputation, blindness, kidney failure, '
+                    'and other serious conditions')
+        st.markdown('* People who smoke are also 30-40 percent more likely to develop Type 2 diabetes.')
 
     # Main page
+
+    st.title('DIATECT')
+    st.header('...detecting diabetes using Neural Networks')
     image1 = Image.open(r"C:\Users\Tomi\Documents\github\Diabetes Prediction\image1.jpg")
     st.image(image1, caption=None)
 
@@ -135,9 +151,17 @@ def main():
                                 weakness, polyphagia, genital_thrush, visual_blurring, itching,
                                 irritability, delayed_healing, partial_paresis, muscle_stiffness,
                                 alopecia, obesity)
-        st.success('Your diabetes status is {}'.format(result))
+            # st.success('Your diabetes status is {}'.format(result))
+            if result == 1:
+                st.success('Please see a doctor. You may be diabetic')
+            else:
+                st.success('Congratulations, you are not diabetic')
 
 
 # run webpage
 if __name__ == '__main__':
     main()
+
+# link to github source code
+link = '[View source code on GitHub](https://github.com/tomisile/Diabetes-Detection)'
+st.markdown(link, unsafe_allow_html=True)
