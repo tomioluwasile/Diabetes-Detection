@@ -19,9 +19,6 @@ st.set_page_config(
     }
 )
 
-# App title
-# st.title("DIATECT")
-
 data_url = 'https://raw.githubusercontent.com/tomisile/Diabetes-Detection/main/diabetes_dataset.csv'
 
 
@@ -36,7 +33,7 @@ dataset = load_data(data_url)
 
 
 # load trained model
-pickle_in = open(r"C:\Users\Tomi\Documents\github\Diabetes Prediction\mlpc.pkl", 'rb')
+pickle_in = open(r"https://github.com/tomisile/Diabetes-Detection/main/mlpc.pkl", 'rb')
 mlpc = pickle.load(pickle_in)
 
 
