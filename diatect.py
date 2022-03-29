@@ -108,10 +108,6 @@ def main():
 
         age = st.number_input('1. How old are you?', min_value=1, max_value=100, value=60)
         gender = st.radio('2. Gender', options=(1, 0), format_func=lambda x: gender_options.get(x))
-        if gender == 1:
-            st.write('You\'re male')
-        else:
-            st.write('You\'re female')
         polyuria = st.radio('3. Have you been urinating excessively?', options=(1, 0),
                             format_func=lambda x: yes_no_options.get(x))
         polydipsia = st.radio('4. Do you feel extreme thirstiness?', options=(1, 0),
