@@ -74,7 +74,7 @@ def main():
 
     st.title('DIATECT')
     st.header('...detecting diabetes using Neural Networks')
-    image1 = Image.open(r"C:\Users\Tomi\Documents\github\Diabetes Prediction\image1.jpg")
+    image1 = Image.open("image1.jpg")
     st.image(image1, caption=None)
 
     # view dataset checkbox
