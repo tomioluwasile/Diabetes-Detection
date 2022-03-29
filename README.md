@@ -2,6 +2,8 @@
  
 Try model here: [DIATECT](https://share.streamlit.io/tomisile/diabetes-detection/main/diatect.py)
 
+![diatect demo](https://user-images.githubusercontent.com/75077076/160716396-887500ee-0002-4c6e-aeab-6a25338e6dcd.gif)
+
 ## 📜 Description
 Showing signs of sudden weight loss, visual blurring, itching, or irritability? Answering these qualifying questions and more can help you detect if you're diabetic or not. 
  
