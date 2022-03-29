@@ -1,5 +1,6 @@
 # Diabetes Prediction Using Simple Machine Learning Algorithms
  
+Try model here: [DIATECT](https://share.streamlit.io/tomisile/diabetes-detection/main/diatect.py)
 
 ## 📜 Description
 Showing signs of sudden weight loss, visual blurring, itching, or irritability? Answering these qualifying questions and more can help you detect if you're diabetic or not. 
@@ -20,6 +21,7 @@ More info:
 It's fascinating to easily predict health diseases using currated data. This repo contains basic implemetation of concepts like using data science libraries (numpy, pandas, etc.), data preprocessing and use of machine learning algorithms.
  
 ## 🧰 Technologies used
+ * Streamlit
  * Pandas
  * Numpy
  * Matplotlib
@@ -33,4 +35,10 @@ It's fascinating to easily predict health diseases using currated data. This rep
 * Random Forest Classifier (Bug on last notebook run)
 
 ## ▶️ How to run
-Clone and run in a jupyter notebook environment
+> Clone repo
+
+> `pip install streamlit`
+
+> From terminal, `streamlit run "filepath/to/diatect.py"`
+
+> Run **diabetes prediction model.ipynb** file in a jupyter notebook environment to explore the script
