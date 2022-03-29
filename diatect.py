@@ -33,7 +33,7 @@ dataset = load_data(data_url)
 
 
 # load trained model
-pickle_in = open(r"https://github.com/tomisile/Diabetes-Detection/main/mlpc.pkl", 'rb')
+pickle_in = open(r"https://raw.githubusercontent.com/tomisile/Diabetes-Detection/main/mlpc.pkl", 'rb')
 mlpc = pickle.load(pickle_in)
 
 
